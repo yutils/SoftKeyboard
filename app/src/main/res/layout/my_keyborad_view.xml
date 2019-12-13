@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mykeyboard_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#999999"
+    android:layout_alignParentBottom="true"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义软键盘"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:id="@+id/complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="完成"
+        android:textSize="18sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <com.example.mycustomkeyboard.MyKeyBoardView
+        android:id="@+id/mykeyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#999999"
+        android:layout_marginTop="10dp"
+        android:keyBackground="@drawable/key_drawable"
+        android:keyTextColor="@android:color/black"
+        android:layout_below="@id/title"
+        android:visibility="gone"/>
+
+</RelativeLayout>
