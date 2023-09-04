@@ -16,6 +16,7 @@
 
         <com.example.mycustomkeyboard.KeyBoardEditText
             android:id="@+id/ed_main"
+            android:hint="请输入"
             android:layout_width="match_parent"
             android:layout_height="50dip"
             android:background="@android:color/holo_orange_dark" />
