@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.mycustomkeyboard">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="LockedOrientationActivity">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -15,6 +16,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
+            android:exported="true"
             android:icon="@mipmap/ic_launcher"
             android:label="自定义软键盘">
             <intent-filter>
@@ -26,6 +28,7 @@
         </activity>
         <activity
             android:name=".Main2Activity"
+            android:exported="true"
             android:icon="@mipmap/ic_launcher"
             android:label="自定义数字键盘">
             <intent-filter>
@@ -35,6 +38,7 @@
         </activity>
         <activity
             android:name=".WebViewActivity"
+            android:exported="true"
             android:icon="@mipmap/ic_launcher"
             android:label="自定义WebView键盘">
 
